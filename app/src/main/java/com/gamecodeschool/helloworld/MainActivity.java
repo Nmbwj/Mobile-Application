@@ -8,10 +8,12 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.util.Log;
 import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        Toast.makeText(this,"Can you see me?",Toast.LENGTH_SHORT).show();
+        Log.i("Info","Done the APP");
     }
 
     @Override
@@ -52,5 +57,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void topClick(View v){
+        Toast.makeText(this, "Sam thank you!",Toast.LENGTH_SHORT).show();
+        Log.i("Info","The top button is clicked");
+    }
+    public void bottomClick(View v){
+        Toast.makeText(this,"Sam not good choice",Toast.LENGTH_SHORT).show();
+        Log.i("Info", "The bottom button is clicked");
     }
 }
