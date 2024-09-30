@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Cool photo of Sam!"
+        android:text="Watching the Horizon"
         android:textSize="24sp" />
 
     <ImageView
@@ -19,14 +19,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/image_1" />
+        app:srcCompat="@drawable/sam_image1" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Model Stand View"
+        android:text="In believe of Hopes!"
         android:textSize="16sp" />
 
     <TextView
